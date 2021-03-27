@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header';
+import Legenda from './components/Legenda';
+import SearchFounds from './components/SearchFounds'
+import MinimumAplication from './components/MinimumAplication'
+import MaximumRedemption from './components/MaximumRedemption'
+import { Provider } from 'react-redux'
+import  { ThemeProvider } from 'styled-components'
+import './index.css' 
+
+import theme from './Styles/globalstyles';
+import store from './data';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ThemeProvider theme={theme}>
+        <Header/>
+        <Legenda/>
+        <Provider store={store}>
+          <SearchFounds/>
+          <MinimumAplication/>
+          <MaximumRedemption/>
+        </Provider>
+      </ThemeProvider>
     </div>
   );
 }
