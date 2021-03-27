@@ -1,0 +1,161 @@
+.risk-group {
+    display: block;
+    height: auto;
+    width: auto;
+  }
+  .risk-group .risk__subtitle {
+    font: 400 11px/16px "Roboto", sans-serif;
+    margin-top: 27px;
+  }
+  .risk-group .risk__subtitle:first-child {
+    margin-right: 8px;
+  }
+  .risk-group .risk__subtitle:last-child {
+    margin-left: 8px;
+  }
+  .risk-group .risk__level {
+    float: left;
+    height: 40px;
+    position: relative;
+    width: 12px;
+  }
+  .risk-group .risk__level:hover .risk__line,
+  .risk-group .risk__level.active .risk__line,
+  .risk-group .risk__level.active ~ .risk__level:hover .risk__line {
+    border: solid 10px transparent;
+    border-bottom: solid 10px #505152;
+    bottom: -12px;
+    cursor: pointer;
+    left: -3px;
+    position: absolute;
+  }
+  .risk-group .risk__level:hover.risk--l1 .risk__line,
+  .risk-group .risk__level.active.risk--l1 .risk__line,
+  .risk-group .risk__level.active ~ .risk__level:hover.risk--l1 .risk__line {
+    border-left: solid 10px transparent;
+  }
+  .risk-group .risk__level:hover.risk--l12 .risk__line,
+  .risk-group .risk__level.active.risk--l12 .risk__line,
+  .risk-group .risk__level.active ~ .risk__level:hover.risk--l12 .risk__line {
+    border-right: solid 10px transparent;
+  }
+  .risk-group .risk__level:hover {
+    cursor: pointer;
+  }
+  .risk-group .risk__level.active ~ .risk__level .risk__line {
+    border: none;
+  }
+  .risk-group .risk__level:not(.active):hover ~ .risk__level .risk__line {
+    border: none;
+  }
+  .risk-group .risk__level .risk__bar {
+    background: #639d31;
+    display: block;
+    margin: 0 auto;
+    width: 7px;
+  }
+  .risk-group .risk__level.risk--l1 .risk__bar {
+    background: #a6ecfc;
+    height: calc(15px + 2px);
+    margin-top: calc(40px - (15px + 2px));
+  }
+  .risk-group .risk__level.risk--l2 .risk__bar {
+    background: #68f1dd;
+    height: calc(15px + 4px);
+    margin-top: calc(40px - (15px + 4px));
+  }
+  .risk-group .risk__level.risk--l3 .risk__bar {
+    background: #91ed6e;
+    height: calc(15px + 6px);
+    margin-top: calc(40px - (15px + 6px));
+  }
+  .risk-group .risk__level.risk--l4 .risk__bar {
+    background: #b0f42a;
+    height: calc(15px + 8px);
+    margin-top: calc(40px - (15px + 8px));
+  }
+  .risk-group .risk__level.risk--l5 .risk__bar {
+    background: #ddf40c;
+    height: calc(15px + 10px);
+    margin-top: calc(40px - (15px + 10px));
+  }
+  .risk-group .risk__level.risk--l6 .risk__bar {
+    background: #faf00e;
+    height: calc(15px + 12px);
+    margin-top: calc(40px - (15px + 12px));
+  }
+  .risk-group .risk__level.risk--l7 .risk__bar {
+    background: #ffdc00;
+    height: calc(15px + 14px);
+    margin-top: calc(40px - (15px + 14px));
+  }
+  .risk-group .risk__level.risk--l8 .risk__bar {
+    background: #fb0;
+    height: calc(15px + 16px);
+    margin-top: calc(40px - (15px + 16px));
+  }
+  .risk-group .risk__level.risk--l9 .risk__bar {
+    background: #f80;
+    height: calc(15px + 18px);
+    margin-top: calc(40px - (15px + 18px));
+  }
+  .risk-group .risk__level.risk--l10 .risk__bar {
+    background: #ff5e00;
+    height: calc(15px + 20px);
+    margin-top: calc(40px - (15px + 20px));
+  }
+  .risk-group .risk__level.risk--l11 .risk__bar {
+    background: #ff0600;
+    height: calc(15px + 22px);
+    margin-top: calc(40px - (15px + 22px));
+  }
+  .risk-group .risk__level.risk--l12 .risk__bar {
+    background: #b51414;
+    height: calc(15px + 24px);
+    margin-top: calc(40px - (15px + 24px));
+  }
+  .risk-group .risk__level .risk__line {
+    border-bottom: solid 1px #757678;
+    display: block;
+    height: 12px;
+    width: 12px;
+  }
+  .risk-group .risk__level.risk--l1 .risk__line {
+    border-left: solid 1px #757678;
+  }
+  .risk-group .risk__level.risk--l12 .risk__line {
+    border-right: solid 1px #757678;
+  }
+  .user-risk--conservador .user-risk {
+    background: #a6ecfc;
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+  }
+  .user-risk--moderado .user-risk {
+    background: #ffdc00;
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+  }
+  .user-risk--agressivo .user-risk {
+    background: #ff0600;
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+  }
+  .user-risk--disabled {
+    color: #9c9d9e;
+  }
+  .user-risk--disabled .user-risk {
+    opacity: 0.7;
+  }
+
+
+  html body table.fund__table--responsive tbody tr[ng-click] .fund__risk__cell {
+    height: calc(100% + 40px);
+    left: -5px;
+    position: absolute;
+    top: 0;
+    width: 7px;
+  }
