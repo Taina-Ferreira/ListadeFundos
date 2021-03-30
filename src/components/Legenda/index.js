@@ -20,35 +20,28 @@ const Li = styled.li`
 
 const Legenda = () => {
     return (
-        <div className="row">
-            <div className="grid-container">
-                <div className="large-9 medium-9 small-12 columns">
-                    <Container>
-                        <p><Title>LEGENDA</Title></p>
-                        <ul className="row no-bullet">
-                            <Li className="large-3 medium-3 text-left small-12 columns">
-                                <Stars/>{'   '}Fundo para investidor qualificado
-                            </Li>
-                            <Li className="large-3 medium-3 text-left small-12 columns">
-                                <Information/>{'   '}Entenda o resgate deste fundo
-                            </Li>
-                            <Li className="large-3 medium-3 text-left small-12 columns">
-                                <Block/>{'   '}Fundo fechado para aplicação
-                            </Li>
-                            <Li className="large-3 medium-3 text-left small-12 columns">
-                                <Reply/>{'   '}Aplicar neste fundo
-                            </Li>
-                        </ul>
-                        <ul className="row no-bullet">
-                            <Li className="large-3 medium-3 text-left small-12 columns">
-                                <Eearth/>{'   '}Investimento ESG (Environmental, Social and Governance)
-                            </Li>
-                        </ul>
-                    </Container>
-
-                </div>
-            </div>
-        </div>
+        <Container>
+            <p><Title>LEGENDA</Title></p>
+            <ul className="row no-bullet">
+                <Li className="large-3 medium-3 text-left small-12 columns">
+                    <Stars/>{'   '}Fundo para investidor qualificado
+                </Li>
+                <Li className="large-3 medium-3 text-left small-12 columns">
+                    <Information/>{'   '}Entenda o resgate deste fundo
+                </Li>
+                <Li className="large-3 medium-3 text-left small-12 columns">
+                    <Block/>{'   '}Fundo fechado para aplicação
+                </Li>
+                <Li className="large-3 medium-3 text-left small-12 columns">
+                    <Reply/>{'   '}Aplicar neste fundo
+                </Li>
+            </ul>
+            <ul className="row no-bullet">
+                <Li className="large-3 medium-3 text-left small-12 columns">
+                    <Eearth/>{'   '}Investimento ESG (Environmental, Social and Governance)
+                </Li>
+            </ul>
+        </Container>
     )
 }
 

@@ -8,6 +8,7 @@ const Icon = styled.i`
     font-size: 20px;
     :hover{
         color: ${props => props.theme.colors.black};
+        cursor: pointer;
     }
 `;
 
@@ -16,8 +17,8 @@ const Iconreply = styled.i`
     border: solid 2px transparent;
     color: ${props => props.theme.colors.white};
     display: block;
-    font-size: 10px;
-    line-height: 20px;
+    font-size: 15px;
+    line-height: 15px;
     text-align: right;
     height: 20px;
     position: relative;
@@ -25,11 +26,10 @@ const Iconreply = styled.i`
     width: 20px;
     border-radius: 50% 50%;
     box-sizing: border-box;
-    float: left;
     transform: scaleX(1) rotate(
         90deg
     );
-    font-size: 15px;
+    float: left;
 `;
 
 
@@ -38,6 +38,8 @@ const Stars = () => (<Icon className="mdi mdi-star-circle" style={{color: theme.
 const Information = () => (<Icon className="mdi mdi-information-outline" style={{color: theme.colors.grey}} />)
 
 const Block = () => (<Icon className="mdi mdi-block-helper" style={{color: theme.colors.grey}} />)
+
+const Minus = () => (<Icon className="mdi mdi-arrow-down-drop-circle" style={{color: theme.colors.black}} />)
 
 
 const Reply = () => (<Iconreply className="mdi mdi-reply"/>)
@@ -52,4 +54,4 @@ const IconMagnify = styled.i`
 
 const Magnify = () => (<IconMagnify className="mdi mdi-magnify"/>)
 
-export {Stars,Information,Block,Reply,Eearth,Magnify}
+export {Stars,Information,Block,Reply,Eearth,Magnify,Minus}

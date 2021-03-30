@@ -1,9 +1,18 @@
 import React from 'react'
-import CustomizedSlider from '../Slider'
-
+import CustomizedSlider from '../../../Slider'
+import styled from 'styled-components'
 import { connect } from 'react-redux'
 
-import { SetMaximumRedemption } from '../../data/actions'
+import { setMaximumRedemption } from '../../../../data/actions'
+
+const Title = styled.strong`
+  font-size: 13px;
+  color: ${props => props.theme.colors.black};
+`;
+
+const Legenda = styled.span`
+  font-size: 14px;
+`;
 
 const MaximumRedemption = ({ redemption, dispatch }) => {
 
@@ -59,18 +68,21 @@ const MaximumRedemption = ({ redemption, dispatch }) => {
     }
 
     return (
-        <div className="large-12 medium-12 small-12 columns">
-            <div className="row collapse expanded card display">
-                <div className="input-group text-center">
-                    <label><strong>Prazo de resgate</strong></label>
+        <div className="grid-container">
+            <div className="grid-x grid-margin-x">
+                <div className="cell auto">
+                    <label className="text-center"><Title>Prazo de resgate</Title></label>
                 </div>
-                
-                <div>
-                    <CustomizedSlider value={redemption.value} min={redemption.min} max={redemption.max} onChange={(e,v) => dispatch(SetMaximumRedemption(v))}/>
+            </div>
+            <div className="grid-x grid-margin-x">
+                <div className="cell auto">
+                <CustomizedSlider value={redemption.value} min={redemption.min} max={redemption.max} onChange={(e,v) => dispatch(setMaximumRedemption(v))}/>
                 </div>
+            </div>
 
-                <div>
-                    <p>{MaximumRedemptionDays[redemption.value]}</p>
+            <div className="grid-x grid-margin-x">
+                <div className="cell auto">
+                    <p className="text-center"><Legenda>{MaximumRedemptionDays[redemption.value]}</Legenda></p>
                 </div>
             </div>
         </div>
