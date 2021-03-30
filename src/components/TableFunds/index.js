@@ -12,7 +12,7 @@ const Table = styled.table`
         cursor: pointer;
     }
 `
-
+//Tabela de fundos
 const TableFunds = () => {
     return (
         <ContainerWhite>
