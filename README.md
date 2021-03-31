@@ -9,9 +9,9 @@
 # Tecnologias utilizadas
 As seguintes ferramentas foram usadas na construção do projeto:
 
-ReactJS
-Foundation6
-Redux
+- ReactJS
+- Foundation6
+- Redux
 
 ### `npm start`
 
