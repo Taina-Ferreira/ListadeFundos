@@ -1,4 +1,4 @@
-<h1 align="right">Lista de fundos de investimentos Órama</h1>
+<h1 align="left">Lista de fundos de investimentos Órama</h1>
 
 ## Descrição do Projeto
 <p align="center">Desafio proposto pela empresa Órama para processo seletivo.</p>
