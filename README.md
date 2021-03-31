@@ -6,7 +6,7 @@
 # Link de produção 
 [https://taina-ferreira.github.io/ListadeFundos-Orama/](https://taina-ferreira.github.io/ListadeFundos-Orama/)
 
-#Tecnologias utilizadas
+# Tecnologias utilizadas
 As seguintes ferramentas foram usadas na construção do projeto:
 
 ReactJS
