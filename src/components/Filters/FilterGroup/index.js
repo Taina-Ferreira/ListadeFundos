@@ -26,11 +26,11 @@ const Row = styled.div`
 const FilterGroup = () => {
     return (
         <Container className="grid-container fluid">
-            <Container className="grid-x grid-padding-x">
-                <Row className="medium-8 large-6 cell">
+            <div className="grid-x grid-padding-x">
+                <Row className="medium-10 large-8 cell">
                     <SearchFounds/>
                 </Row>
-            </Container>
+            </div>
             <ContainerGrey className="grid-container hide-for-small-only">
                 <div className="grid-x grid-margin-x">
                     <Row className="cell medium-3 large-4">

@@ -1,7 +1,7 @@
 import React,{ useState } from 'react'
 import styled from 'styled-components'
 import { connect } from "react-redux"
-import {Minus} from '../../Icons'
+import { Minus } from '../../Icons'
 import { 
     toggleFixedIncome, setSubGroupFixedIncome,
     toggleDifferentStrategies, setSubGroupDifferentStrategies,
@@ -86,6 +86,7 @@ const FilterStrategies = ({
     }) => {
     return (
         <div>
+            <p>Filtrar por estratégias:</p>
             <Spacing>
                 <FilterGroup data={fixedIncome} toggleGroup={toggleFixedIncome} toggleSubGroup={toggleSubGroupFixedIncome}/>
             </Spacing>

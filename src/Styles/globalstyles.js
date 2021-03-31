@@ -4,6 +4,8 @@ const grey = "#9c9d9e"
 const white = "#fff"
 const bluechill = "#119c9f"
 const backgroud = "#f2f2f2"
+const macro = "#eff0f2"
+const main = "#f4f5f7"
 
 const theme = {
     colors: {
@@ -13,6 +15,8 @@ const theme = {
         white,
         bluechill,
         backgroud,
+        macro,
+        main,
         barRisk: {
             1:  "#a6ecfc",
             2:  "#68f1dd",
