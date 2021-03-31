@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import TableLine from '../TableLine'
 import styled from 'styled-components'
+import {Tr, Td} from 'react-super-responsive-table'
 
 const Span = styled.span`
     font-size: 13px;
@@ -28,9 +29,9 @@ const GroupMacro = ({macro, selectFunds}) => {
                 } else {
                     return (
                         <Fragment key={mk}>
-                            <tr style={{backgroundColor: "#f2f2f2"}}>
-                                <td colSpan="8" style={{marginBottom: "0",paddingLeft: "16px"}}><Span>{main.name}</Span></td>
-                            </tr>
+                            <Tr style={{backgroundColor: "#f2f2f2"}}>
+                                <Td colSpan="8" style={{marginBottom: "0",paddingLeft: "16px"}}><Span>{main.name}</Span></Td>
+                            </Tr>
                             {funds}
                         </Fragment>
                     )

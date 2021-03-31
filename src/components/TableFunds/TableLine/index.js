@@ -94,7 +94,7 @@ const TableLine = ({fund}) => {
 
     return (
         <Tr>
-            <Td className="hide-for-small-only">
+            <Td className="show-for-large">
                 <div className="grid-container full">
                     <div className="grid-x">
                         <div className="cell shrink">
@@ -107,7 +107,7 @@ const TableLine = ({fund}) => {
                     </div>
                 </div>
             </Td>
-            <Td className="show-for-small-only">
+            <Td className="hide-for-large">
                 <div className="grid-container full">
                     <div className="grid-x">
                         <div className="cell shrink">
@@ -121,14 +121,14 @@ const TableLine = ({fund}) => {
                 </div>
             </Td>
             <Td className="text-right"><P>{formatDate(fund.quota_date)}</P></Td>
-            <Td className="hide-for-small-only text-right"><P>{formatPercent(fund.profitabilities.month)}</P></Td>
-            <Td className="hide-for-small-only text-right"><P>{formatPercent(fund.profitabilities.year)}</P></Td>
-            <Td className="hide-for-small-only text-right" data-title="12 M (%):"><P>{formatPercent(fund.profitabilities.m12)}</P></Td>
-            <Td className="show-for-small-only text-right"><P>{formatPercent(fund.profitabilities.m12)}</P></Td>
+            <Td className="show-for-large text-right"><P>{formatPercent(fund.profitabilities.month)}</P></Td>
+            <Td className="show-for-large text-right"><P>{formatPercent(fund.profitabilities.year)}</P></Td>
+            <Td className="show-for-large text-right" data-title="12 M (%):"><P>{formatPercent(fund.profitabilities.m12)}</P></Td>
+            <Td className="hide-for-large text-right"><P>{formatPercent(fund.profitabilities.m12)}</P></Td>
             <Td className="text-right"><P>{formatNumber(fund.operability.minimum_initial_application_amount)}</P></Td>
             <Td className="text-right"><P>D+{fund.operability.retrieval_quotation_days}</P></Td>
-            <Td className="hide-for-small-only text-left"><P>{applyIcon(fund.is_closed_to_capture)}</P></Td>
-            <Td className="show-for-small-only">
+            <Td className="show-for-large text-left"><P>{applyIcon(fund.is_closed_to_capture)}</P></Td>
+            <Td className="hide-for-large">
                 <div className="grid-x fluid">
                     <div className="cell auto text-center">
                         <BtnDeteils className="button" >MAIS DETALHES</BtnDeteils>

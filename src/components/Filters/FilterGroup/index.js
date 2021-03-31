@@ -31,15 +31,15 @@ const FilterGroup = () => {
                     <SearchFounds/>
                 </Row>
             </div>
-            <ContainerGrey className="grid-container hide-for-small-only">
+            <ContainerGrey className="grid-container show-for-large">
                 <div className="grid-x grid-margin-x">
-                    <Row className="cell medium-3 large-4">
+                    <Row className="cell large-4">
                         <MinimumAplication/>
                     </Row>
-                    <Row className="cell medium-3 large-4">
+                    <Row className="cell large-4">
                         <RiskProfile/>
                     </Row>
-                    <Row className="cell medium-3 large-4">
+                    <Row className="cell large-4">
                         <MaximumRedemption/>
                     </Row>
                 </div>

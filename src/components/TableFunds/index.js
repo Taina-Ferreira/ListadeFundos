@@ -1,9 +1,10 @@
-import React from 'react'
-import TableBody from './TableBody'
+import React, { Suspense } from 'react'
 import TableHeader from './TableHeader'
 import styled from 'styled-components'
 import {Table} from 'react-super-responsive-table'
 import './index.css'
+
+const TableBody = React.lazy(() => import('./TableBody'));
 
 const ContainerWhite = styled.div`
     background-color: ${props => props.theme.colors.white};
@@ -15,7 +16,9 @@ const TableFunds = () => {
         <ContainerWhite>
             <Table className="hover unstriped stack shadow">
                 <TableHeader/>
-                <TableBody/>
+                <Suspense fallback={<div>Loading...</div>}>
+                    <TableBody/>
+                </Suspense>
             </Table>
         </ContainerWhite>
     )
