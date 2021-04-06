@@ -16,7 +16,7 @@ const TableFunds = () => {
         <ContainerWhite>
             <Table className="hover unstriped stack shadow">
                 <TableHeader/>
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<tbody><tr><td>Loading...</td></tr></tbody>}>
                     <TableBody/>
                 </Suspense>
             </Table>

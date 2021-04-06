@@ -84,7 +84,7 @@ const TableBody = ({ funds, fundName, minAplication, getAll, redemption, risk, s
 
     return (
         <Tbody>
-            <Suspense fallback={<th><td Td colSpan="8">Loading...</td></th>}>
+            <Suspense fallback={<tr><td colSpan="8">Loading...</td></tr>}>
                 <GroupMacro macro={strategies.fixedIncome} selectFunds={selectFunds}/>
             </Suspense>
             <GroupMacro macro={strategies.differentStrategies} selectFunds={selectFunds}/>
