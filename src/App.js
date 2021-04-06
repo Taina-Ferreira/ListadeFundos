@@ -5,6 +5,7 @@ import { Provider } from 'react-redux'
 import styled,{ ThemeProvider } from 'styled-components'
 
 import theme from './Styles/globalstyles'
+//import 'foundation-sites'
 import store from './data';
 
 import FilterGroup from './components/Filters/FilterGroup'

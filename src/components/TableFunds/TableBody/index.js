@@ -6,8 +6,6 @@ import {Tbody} from 'react-super-responsive-table'
 
 const GroupMacro = React.lazy(() => import('../GroupMacro'))
 
-
-
 /*
 const Tbody = styled.tbody`
     background-color: ${props => props.theme.colors.white};
@@ -18,7 +16,7 @@ const TableBody = ({ funds, fundName, minAplication, getAll, redemption, risk, s
 
     useEffect(() => {
         getAll()
-    })
+    },[])
     
     const filterByName = (name) => {
 
